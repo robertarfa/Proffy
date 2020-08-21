@@ -1,44 +1,91 @@
-- Utilizando tecnologia mobile first.
+<h1 align="center">
+    <br>Next Level Week #2<br/>
+    Node.js | ReactJS | React Native
+</h1>
 
-## Available Scripts
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/HigorSnt/proffy?style=flat-square">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/HigorSnt/proffy?style=flat-square">
+  <img alt="GitHub" src="https://img.shields.io/github/license/HigorSnt/proffy?style=flat-square"> 
+  <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%237519C1?style=flat-square"><br/>
+  <a href="https://insomnia.rest/run/?label=Proffy&uri=https%3A%2F%2Fraw.githubusercontent.com%2FHigorSnt%2Fproffy%2Fmaster%2F.github%2FInsomnia.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+</p>
+<p align="center">
+  <a href="#bookmark-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#boom-como-executar">Como Executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-In the project directory, you can run:
+<p align="center">
+  <img alt="design do projeto" width="650px" src="./design.png" />
+<p>
 
-### `yarn start`
+## :bookmark: Sobre
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+O **Proffy** é uma aplicação Web e Mobile feita para auxiliar na conexão entre os alunos e os professores. Logo, esta aplicação oferece aos professores a possibilidade de registrar aulas, podendo adicionar informações como a disciplina, o custo e horário e aos alunos a possibilidade de buscar pelas aulas cadastradas.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Este projeto foi idealizado pensando no **6 de agosto**, onde se comemora o **Dia Nacional dos Profissionais da Educação**.
 
-### `yarn test`
+Essa aplicação foi realizada durante a Next **Level Week #2**, projeto da [Rocketseat](https://rocketseat.com.br/).
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :rocket: Tecnologias
 
-### `yarn build`
+- [Typescript](https://www.typescriptlang.org/)
+- [Node.js](https://nodejs.org/en/)
+- [ReactJS](https://reactjs.org/)
+- [React Native](http://facebook.github.io/react-native/)
+- [Expo](https://expo.io/)
+- [Express](https://expressjs.com/)
+- [axios](https://github.com/axios/axios)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## :boom: Como Executar
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- ### **Pré-requisitos**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  - É **necessário** possuir o **[Node.js](https://nodejs.org/en/)** instalado no computador
+  - É **necessário** possuir o **[Git](https://git-scm.com/)** instalado e configurado no computador
+  - Também, é **preciso** ter um gerenciador de pacotes seja o **[NPM](https://www.npmjs.com/)** ou **[Yarn](https://yarnpkg.com/)**.
+  - Por fim, é **essencial** ter o **[Expo](https://expo.io/)** instalado de forma global na máquina
 
-### `yarn eject`
+1. Faça um clone do repositório:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```sh
+  $ git clone https://github.com/HigorSnt/proffy.git
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Executando a Aplicação:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```sh
+  # API
+  $ cd server
+  # Instalando as dependências do projeto.
+  $ yarn # ou npm install
+  # Configurando o banco de dados e criando as tabelas.
+  $ yarn knex:migrate # ou npm run knex:migrate
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  # Inicie a API
+  $ yarn start # ou npm start
 
-## Learn More
+  # Aplicação web
+  $ cd web
+  # Instalando as dependências do projeto.
+  $ yarn # ou npm install
+  # Inicie a aplicação web
+  $ yarn start # ou npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  # Aplicação mobile
+  $ cd mobile
+  # Instalando as dependências do projeto.
+  $ yarn # ou npm install
+  # Inicie a aplicação mobile
+  $ yarn start # ou npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+
+---
+
+<sup>Projeto desenvolvido com a tutoria de [Diego Fernandes](https://github.com/diego3g), da [Rocketseat](rocketseat.com.br).</sup>
