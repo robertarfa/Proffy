@@ -1,13 +1,11 @@
-import React from 'react'
-import './assets/styles/global.css'
-import Routes from './routes'
+import React, { ReactElement } from 'react';
 
-function App() {
-  return (
-    <>
-      <Routes />
-    </>
-  )
+import Routes from './routes';
+
+import './assets/styles/global.css';
+
+function App(): ReactElement {
+  return <Routes />;
 }
 
-export default App
+export default App;
